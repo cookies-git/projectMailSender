@@ -1,0 +1,29 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#name {
+  position: fixed; /* or absolute */
+  top: 48%;
+  left: 33%;
+
+  font-size: large;
+  font-family: sans-serif;
+}
+#btn {
+  background-color: rgb(83, 82, 82); /* Green */
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative; /* or absolute */
+  top: 10px;
+  left: 38%;
+  border-radius: 50px;
+}
