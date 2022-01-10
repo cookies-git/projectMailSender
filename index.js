@@ -101,19 +101,27 @@ app.post("/send_email", (req, res) => {
 
 
       const recipient = req.body.email;
-      const mailSubject = "We Received your Mail! Thank you!";
-      const mailBody = `Thank You for Contacting US!
+      const mailSubject = "I've received your Mail! Thank you!";
+      const mailBody = `Hey,
+      
+      How's it going? I've received your Mail! Thank you for Contacting me.
+      If any, I'll let you know ASAP.
 
+      Have a nice day. aloha:)
+
+      ~ Sree
+      
+      Spread Love
+      /////////////////////////////////////////////////////
       Your Message is:
+      ////////////////////////////////////////////////////
 
       Subject: ${req.body.subject}
       
-
       Message: ${req.body.message}
       
-      - Sree Sankar
-      
-      "Spread Love"`;
+      Attachment:`;
+
       const attachmentPath = req.file?.path;
 
       // Mail options
